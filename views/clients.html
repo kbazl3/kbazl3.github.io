@@ -1,0 +1,77 @@
+<script src="/vendor/js/jquery.bxslider.min.js" type="text/javascript" charset="utf-8"></script>
+<div id="clients">
+	<article class="panel">
+		<h1>Projects</h1>
+		<p>Below is a list of some projects I've been working on during my employment at iris worldwide. Some of the sites below can't be linked to because they were promotions that ran for a short period. The latest projects start at the top. </p>
+
+
+		<h2 id="nicoventures-voke">Guitar Shop</h2>
+		<div class="image-wrap">
+			<img src="./app/images/guitarBazaar.png" alt="TEMP">
+			<p class="show-section" ng-click="app.voke=!app.voke"><span class="link"><span ng-if="!app.voke"><span class="icon-wrap-show"></span>Show</span><span ng-if="app.voke"><span class="icon-wrap-close"></span>Hide</span> details</span></p>
+		</div>
+
+		<section ng-if="app.voke">
+			<div class="wrap">
+				<p>Guitar Bazaar is a hypothetical guitar shop, which is similar to Guitar Center.</p>
+				<p>Technologies include:</p>
+				<ul>
+					<li><p>Node</p></li>
+					<li><p>Angular</p></li>
+					<li><p>Bootstrap</p></li>
+					<li><p>MongoDB</p></li>
+				</ul>
+
+				<ul rn-carousel rn-carousel-control="true" class="image">
+					<li>
+					  <img src="./app/images/guitarBazaar.png" alt="" />
+					</li>
+					<li>
+					  <img src="../app/images/mini-01.png" alt="" />
+					</li>
+					<li>
+					  <img src="../app/images/mini-01.png" alt="" />
+					</li>
+				</ul>
+
+			</div>
+		</section>
+
+	<hr />
+
+		<h2>RainCheck - A Weather App</h2>
+		<div class="image-wrap">
+			<img src="./app/images/rainCheck.png" alt="TEMP">
+			<p class="show-section" ng-click="app.vamosleo=!app.vamosleo"><span class="link"><span ng-if="!app.vamosleo"><span class="icon-wrap-show"></span>Show</span><span ng-if="app.vamosleo"><span class="icon-wrap-close"></span>Hide</span> details</span></p>
+	</div>
+
+		<section ng-if="app.vamosleo">
+			<div class="wrap">
+		<p>Before the World Cup 2014 started, Adidas asked iris to create a Facebook tab to promote their star player, Leo Messi. A multi-platform app drove users to the Facebook page where users could find more information about Adidas products and keep up-to-date with all things Messi via the Stackla social media aggregator.</p>
+				<p>Technologies include:</p>
+				<ul>
+					<li><p>CSS</p></li>
+					<li><p>HTML 5</p></li>
+					<li><p>jQuery/Javascript</p></li>
+					<li><p>Microsoft .net (for localised content)</p></li>
+					<li><p>Facebook API</p></li>
+					<li><p>Stackla</p></li>
+				</ul>
+
+				<ul rn-carousel rn-carousel-control="true" class="image">
+					<li>
+					  <img src="../app/images/mini-01.png" alt="" />
+					</li>
+					<li>
+					  <img src="../app/images/mini-01.png" alt="" />
+					</li>
+					<li>
+					  <img src="../app/images/mini-01.png" alt="" />
+					</li>
+				</ul>
+			</div>
+		</section>
+
+
+	</article>
+</div>
