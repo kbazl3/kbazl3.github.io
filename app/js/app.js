@@ -2,7 +2,7 @@ console.log('Hey there! Thanks for looking into my site, and checking out my con
 
 
 var app = angular.module('app', ['ngRoute','angular-carousel']).config(function($routeProvider)	{
-		
+
 	$routeProvider.when('/', {
 		templateUrl: 'views/home.html',
 		controller: 'HomeController'
@@ -20,13 +20,13 @@ var app = angular.module('app', ['ngRoute','angular-carousel']).config(function(
 		controller: 'AboutController'
 	});
 	$routeProvider.otherwise({ redirectTo : '/' });
-		
+
 });
 
 // controlls the menu
-function MenuController($scope, $location) 
-{ 
-    $scope.isActive = function (viewLocation) { 
+function MenuController($scope, $location)
+{
+    $scope.isActive = function (viewLocation) {
         return viewLocation === $location.path();
 		console.log('a nav item is now active');
 	};
@@ -37,14 +37,3 @@ function gaController($scope, $location, $window) {
     $window.ga.push(['_trackPageview', $location.path()]);
   });
 }
-
-//unused controllers
-app.controller('ClientController', function($scope) {
-});
-app.controller('ContactController', function($scope) {
-});
-app.controller('AboutController', function($scope) {
-});
-app.controller('HomeController', function($scope) {
-});
-
