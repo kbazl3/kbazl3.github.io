@@ -453,8 +453,12 @@ nav ul li.active:nth-child(3) .arrow {
     background-color: #2db8ee
 }
 #clients a {
-    color: #00b771;
-    border-color: #00b771
+    color: white;
+    border-color: white
+}
+#clients a:visited {
+    color: white;
+    border-color: white
 }
 #clients a.link, #clients span.link {
     background-color: #00b771;
@@ -673,7 +677,7 @@ nav ul li.active:nth-child(3) .arrow {
 #sosumi ul .linkedin a:hover {
     background-position: left top
 }
-#sosumi ul .codepen a {
+/*#sosumi ul .codepen a {
     background: url("../images/codepenGray.png") no-repeat;
     background-size: 100% auto;
     background-position: left bottom;
@@ -682,6 +686,16 @@ nav ul li.active:nth-child(3) .arrow {
 }
 #sosumi ul .codepen a:hover {
     background: url("../images/codepenblue.png") no-repeat;
+}*/
+#sosumi ul .codepen a {
+    background: url("../images/icon-codepen.png") no-repeat;
+    background-size: 100% auto;
+    background-position: left bottom;
+    width: 32px;
+    height: 32px
+}
+#sosumi ul .codepen a:hover {
+    background-position: left top
 }
 .enter-setup {
     border: 10px solid red;
