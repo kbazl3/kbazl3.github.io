@@ -7,8 +7,8 @@ var app = angular.module('app', ['ngRoute','angular-carousel']).config(function(
 		templateUrl: 'views/home.html',
 		controller: 'HomeController'
 	});
-	$routeProvider.when('/clients', {
-		templateUrl: 'views/clients.html',
+	$routeProvider.when('/projects', {
+		templateUrl: 'views/projects.html',
 		controller: 'ClientController'
 	});
 	$routeProvider.when('/contact', {
