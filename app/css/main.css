@@ -619,84 +619,113 @@ nav ul li.active:nth-child(3) .arrow {
 .notice a {
     color: #2db8ee
 }
-#sosumi {
+/**************** CARD FLIP ***************/
+.card-container {
+  cursor: pointer;
+  height: 128px;
+  /*perspective: 600;*/
+  position: relative;
+  display: inline-block;
+  width: 128px;
+}
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.card .back {
+  background: #eaeaed;
+  color: #0087cc;
+  line-height: 130px;
+  font-size: 20px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+
+
+
+#footer {
     padding: 12px 0;
     width: 100%;
     text-align: center
 }
-#sosumi p {
+#footer p {
     padding-top: 4px;
     text-align: center;
     text-shadow: none;
     color: #606162
 }
-#sosumi p a {
+#footer p a {
     color: #606162;
     text-decoration: none
 }
-#sosumi p a:hover {
+#footer p a:hover {
     color: #2db8ee
 }
-#sosumi ul {
+#footer ul {
     overflow: hidden
 }
-#sosumi ul li {
+#footer ul li {
     margin: 0 12px 0 0;
     text-align: center;
     display: inline-block
 }
-#sosumi ul a {
+#footer ul a {
     display: block;
     text-indent: -9999em
 }
-#sosumi ul .github a {
+#footer ul .github a {
     background: url("../images/icon-github.png") no-repeat;
     background-size: 100% auto;
     background-position: left bottom;
     width: 32px;
     height: 32px
 }
-#sosumi ul .github a:hover {
+#footer ul .github a:hover {
     background-position: left top
 }
-#sosumi ul .twitter a {
+#footer ul .twitter a {
     background: url("../images/icon-twitter.png") no-repeat;
     background-size: 100% auto;
     background-position: left bottom;
     width: 32px;
     height: 32px
 }
-#sosumi ul .twitter a:hover {
+#footer ul .twitter a:hover {
     background-position: left top
 }
-#sosumi ul .linkedin a {
+#footer ul .linkedin a {
     background: url("../images/icon-linkedin.png") no-repeat;
     background-size: 100% auto;
     background-position: left bottom;
     width: 32px;
     height: 32px
 }
-#sosumi ul .linkedin a:hover {
+#footer ul .linkedin a:hover {
     background-position: left top
 }
-/*#sosumi ul .codepen a {
-    background: url("../images/codepenGray.png") no-repeat;
-    background-size: 100% auto;
-    background-position: left bottom;
-    width: 32px;
-    height: 32px
-}
-#sosumi ul .codepen a:hover {
-    background: url("../images/codepenblue.png") no-repeat;
-}*/
-#sosumi ul .codepen a {
+#footer ul .codepen a {
     background: url("../images/icon-codepen.png") no-repeat;
     background-size: 100% auto;
     background-position: left bottom;
     width: 32px;
     height: 32px
 }
-#sosumi ul .codepen a:hover {
+#footer ul .codepen a:hover {
     background-position: left top
 }
 .enter-setup {
