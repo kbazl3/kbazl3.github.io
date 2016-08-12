@@ -508,7 +508,7 @@ nav ul li.active:nth-child(3) .arrow {
     width: 16px;
     height: 16px;
     margin: 5px 5px 0 0;
-    background: url("../images/icon-close.png") center center no-repeat;
+    /*background: url("../images/icon-close.png") center center no-repeat;*/
     display: block;
     float: left
 }
@@ -516,7 +516,7 @@ nav ul li.active:nth-child(3) .arrow {
     width: 18px;
     height: 17px;
     margin: 2px 5px 0 0;
-    background: url("../images/icon-close.png") -141px -133px no-repeat;
+    /*background: url("../images/icon-close.png") -141px -133px no-repeat;*/
     display: block;
     float: left
 }

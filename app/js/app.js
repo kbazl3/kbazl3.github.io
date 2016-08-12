@@ -5,27 +5,22 @@ var app = angular.module('app', ['ngRoute','angular-carousel']).config(function(
 
 	$routeProvider.when('/', {
 		templateUrl: 'views/home.html',
-		controller: 'HomeController'
 	});
 	$routeProvider.when('/projects', {
 		templateUrl: 'views/projects.html',
-		controller: 'ClientController'
 	});
 	$routeProvider.when('/contact', {
 		templateUrl: 'views/contact.html',
-		controller: 'ContactController'
 	});
 	$routeProvider.when('/about', {
 		templateUrl: 'views/about.html',
-		controller: 'AboutController'
 	});
 	$routeProvider.otherwise({ redirectTo : '/' });
 
 });
 
 // controlls the menu
-function MenuController($scope, $location)
-{
+function MenuController($scope, $location) {
     $scope.isActive = function (viewLocation) {
         return viewLocation === $location.path();
 		console.log('a nav item is now active');
