@@ -107,7 +107,7 @@
 		<h3>Github: https://github.com/kbazl3/starWars</h3>
 		<div class="image-wrap">
 			<a href="http://kbazl3.github.io/starWars/#/" target=_blank>
-				<img src="/app/images/StarWarsEncyclopedia.png" alt="TEMP">
+				<img src="./app/images/StarWarsEncyclopedia.png" alt="TEMP">
 			</a>
 			<p class="show-section" ng-click="app.starwars=!app.starwars"><span class="link"><span ng-if="!app.starwars"><span class="icon-wrap-show"></span>Show</span><span ng-if="app.starwars"><span class="icon-wrap-close"></span>Hide</span> details</span>
 			</p>
@@ -153,7 +153,7 @@
 			</a>
 			<p class="show-section" ng-click="app.pomodoro=!app.pomodoro"><span class="link"><span ng-if="!app.pomodoro"><span class="icon-wrap-show"></span>Show</span><span ng-if="app.guitarBazaar"><span class="icon-wrap-close"></span>Hide</span> details</span>
 			</p>
-		</div>pomodoro
+		</div>
 
 		<section ng-if="app.pomodoro">
 			<div class="wrap">
@@ -172,6 +172,56 @@
 					</li>
 					<li>
 						<p>CSS3</p>
+					</li>
+				</ul>
+
+				<!-- <ul rn-carousel rn-carousel-control="true" class="image">
+					<li>
+					  <img src="./app/images/guitarBazaar.png" alt="" />
+					</li>
+					<li>
+					  <img src="../app/images/mini-01.png" alt="" />
+					</li>
+					<li>
+					  <img src="../app/images/mini-01.png" alt="" />
+					</li>
+				</ul> -->
+
+			</div>
+		</section>
+
+		<h2>MultiVision - Web Dev Tutorials</h2>
+		<div class="image-wrap">
+			<a href="https://cherry-shortcake-76687.herokuapp.com/" target=_blank>
+				<img src="./app/images/multiVision.png" alt="TEMP">
+			</a>
+			<p class="show-section" ng-click="app.multiVision=!app.multiVision"><span class="link"><span ng-if="!app.multiVision"><span class="icon-wrap-show"></span>Show</span><span ng-if="app.guitarBazaar"><span class="icon-wrap-close"></span>Hide</span> details</span>
+			</p>
+		</div>
+
+		<section ng-if="app.multiVision">
+			<div class="wrap">
+				<p>
+					<a href="https://github.com/kbazl3/MultiVision">Check out the project on Github!</a>
+				</p>
+				<br>
+				<p>MultiVision is a project I created while following along with the tutorial at <a href="https://app.pluralsight.com/library/courses/building-angularjs-nodejs-apps-mean/table-of-contents"> this tutorial at Pluralsight.</a>  It went over a lot different techniques such as html templating with Jade or using stylus for your css.  It was fun using Heroku to host as well.  I eventually want to write small tutorials on specific subjects and publish them on this site so check back in the future for an up to date site.</p>
+				<p>Technologies include:</p>
+				<ul>
+					<li>
+						<p>Angular</p>
+					</li>
+					<li>
+						<p>Bootstrap</p>
+					</li>
+					<li>
+						<p>Jade</p>
+					</li>
+					<li>
+						<p>Stylus</p>
+					</li>
+					<li>
+						<p>Heroku</p>
 					</li>
 				</ul>
 
