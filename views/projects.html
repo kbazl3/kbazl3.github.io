@@ -301,6 +301,48 @@
 			</div>
 		</section>
 
+		<h2>Drum Kit</h2>
+		<div class="image-wrap">
+			<a href="https://kbazl3.github.io/drum-kit/" target=_blank>
+				<img src="./app/images/drumkit.png" alt="TEMP">
+			</a>
+			<p class="show-section" ng-click="app.drumkit=!app.drumkit"><span class="link"><span ng-if="!app.drumkit"><span class="icon-wrap-show"></span>Show</span><span ng-if="app.drumkit"><span class="icon-wrap-close"></span>Hide</span> details</span>
+			</p>
+		</div>
+
+		<section ng-if="app.drumkit">
+			<div class="wrap">
+				<p>
+					<a href="https://github.com/kbazl3/drum-kit">Check out the project on Github!</a>
+				</p>
+				<p>I use a lot of different recording software to write music so this is my first attempt at writing a music app</p>
+				<p>Technologies include:</p>
+				<ul>
+					<li>
+						<p>CSS</p>
+					</li>
+					<li>
+						<p>HTML 5</p>
+					</li>
+					<li>
+						<p>Javascript ES6</p>
+					</li>
+				</ul>
+
+				<!-- <ul rn-carousel rn-carousel-control="true" class="image">
+					<li>
+					  <img src="../app/images/mini-01.png" alt="" />
+					</li>
+					<li>
+					  <img src="../app/images/mini-01.png" alt="" />
+					</li>
+					<li>
+					  <img src="../app/images/mini-01.png" alt="" />
+					</li>
+				</ul> -->
+			</div>
+		</section>
+
 
 	</article>
 </div>
