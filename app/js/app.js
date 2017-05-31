@@ -4,20 +4,16 @@ console.log('Hey there! Thanks for looking into my site, and checking out my con
 var app = angular.module('app', ['ngRoute','angular-carousel']).config(function($routeProvider)	{
 
 	$routeProvider.when('/', {
-		templateUrl: 'views/home.html',
-		controller: 'HomeController'
+		templateUrl: 'views/home.html'
 	});
 	$routeProvider.when('/projects', {
-		templateUrl: 'views/projects.html',
-		controller: 'ClientController'
+		templateUrl: 'views/projects.html'
 	});
 	$routeProvider.when('/contact', {
-		templateUrl: 'views/contact.html',
-		controller: 'ContactController'
+		templateUrl: 'views/contact.html'
 	});
 	$routeProvider.when('/about', {
-		templateUrl: 'views/about.html',
-		controller: 'AboutController'
+		templateUrl: 'views/about.html'
 	});
 	$routeProvider.otherwise({ redirectTo : '/' });
 

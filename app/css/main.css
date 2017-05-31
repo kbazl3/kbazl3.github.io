@@ -528,7 +528,7 @@ nav ul li.active:nth-child(3) .arrow {
     background-color: #efe33e
 }
 #contact a.link:hover {
-    background-color: #e7d913
+    background-color: #dd4f99
 }
 #contact section {
     background-color: #efe33e
@@ -654,9 +654,9 @@ nav ul li.active:nth-child(3) .arrow {
   text-align: center;
   transform: rotateY(180deg);
 }
-
-
-
+.contactMe a:hover {
+    background-color: : blue;
+}
 
 #footer {
     padding: 12px 0;
