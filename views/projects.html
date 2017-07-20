@@ -4,6 +4,58 @@
 		<h1>Projects</h1>
 		<p>Below is a list of some projects i've been working on. </p>
 
+		<h2>Developers Around the World</h2>
+		<div class="image-wrap">
+			<a href="https://enigmatic-gorge-10640.herokuapp.com" target=_blank>
+				<img src="./app/images/devsaround.png" alt="TEMP">
+			</a>
+			<p class="show-section" ng-click="app.devsAroundWorld=!app.devsAroundWorld"><span class="link"><span ng-if="!app.devsAroundWorld"><span class="icon-wrap-show"></span>Show</span><span ng-if="app.devsAroundWorld"><span class="icon-wrap-close"></span>Hide</span> details</span>
+			</p>
+		</div>
+
+		<section ng-if="app.devsAroundWorld">
+			<div class="wrap">
+				<p>
+					<a href="https://github.com/kbazl3/devs-around-the-world">Check out the project on Github!</a>
+				</p>
+				<br>
+				<p>Devs Around the World is a site that allows users to pinpoint their location on the map while providing some informaiton about themselves like favortie programming language, age, etc...</p>
+				<p>Technologies include:</p>
+				<ul>
+					<li>
+						<p>Node</p>
+					</li>
+					<li>
+						<p>Express</p>
+					</li>
+					<li>
+						<p>AngularJS</p>
+					</li>
+					<li>
+						<p>Google Maps API</p>
+					</li>
+					<li>
+						<p>MongoDB</p>
+					</li>
+				</ul> -->
+
+				<!-- <ul rn-carousel rn-carousel-control="true" class="image">
+					<li>
+					  <img src="./app/images/guitarBazaar.png" alt="" />
+					</li>
+					<li>
+					  <img src="../app/images/mini-01.png" alt="" />
+					</li>
+					<li>
+					  <img src="../app/images/mini-01.png" alt="" />
+					</li>
+				</ul> -->
+
+			</div>
+		</section>
+
+		<hr /> -->
+
 
 	    <h2>Guitar Bazaar - Guitar Shop</h2>
 		<div class="image-wrap">
@@ -356,48 +408,6 @@
 			<div class="wrap">
 				<p>
 					<a href="https://github.com/kbazl3/CSS-Clock/">Check out the project on Github!</a>
-				</p>
-				<p>This is a small project I wanted to build to practice my CSS skillz</p>
-				<p>Technologies include:</p>
-				<ul>
-					<li>
-						<p>CSS</p>
-					</li>
-					<li>
-						<p>HTML 5</p>
-					</li>
-					<li>
-						<p>Javascript ES6</p>
-					</li>
-				</ul>
-
-				<!-- <ul rn-carousel rn-carousel-control="true" class="image">
-					<li>
-					  <img src="../app/images/mini-01.png" alt="" />
-					</li>
-					<li>
-					  <img src="../app/images/mini-01.png" alt="" />
-					</li>
-					<li>
-					  <img src="../app/images/mini-01.png" alt="" />
-					</li>
-				</ul> -->
-			</div>
-		</section>
-
-		<h2>CSS Variables</h2>
-		<div class="image-wrap">
-			<a href="https://kbazl3.github.io/css-variables/" target=_blank>
-				<img src="./app/images/cssVariables.png" alt="TEMP">
-			</a>
-			<p class="show-section" ng-click="app.cssVariables=!app.cssVariables"><span class="link"><span ng-if="!app.cssVariables"><span class="icon-wrap-show"></span>Show</span><span ng-if="app.cssVariables"><span class="icon-wrap-close"></span>Hide</span> details</span>
-			</p>
-		</div>
-
-		<section ng-if="app.cssVariables">
-			<div class="wrap">
-				<p>
-					<a href="https://github.com/kbazl3/css-variables">Check out the project on Github!</a>
 				</p>
 				<p>This is a small project I wanted to build to practice my CSS skillz</p>
 				<p>Technologies include:</p>
