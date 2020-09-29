@@ -1,8 +1,71 @@
 <script src="/vendor/js/jquery.bxslider.min.js" type="text/javascript" charset="utf-8"></script>
 <div id="clients">
 	<article class="panel">
-		<h1>Projects</h1>
-		<p>Below is a list of some projects i've been working on. </p>
+		<h1><b>Projects</b></h1>
+
+		<h2>MultiVision - Web Dev Tutorials</h2>
+		<div class="image-wrap">
+			<a href="https://cherry-shortcake-76687.herokuapp.com/" target=_blank>
+				<img src="./app/images/multiVision.png" alt="TEMP">
+			</a>
+			<p class="show-section" ng-click="app.multiVision=!app.multiVision"><span class="link"><span ng-if="!app.multiVision"><span class="icon-wrap-show"></span>Show</span><span ng-if="app.multiVision"><span class="icon-wrap-close"></span>Hide</span> details</span>
+			</p>
+		</div>
+
+		<section ng-if="app.multiVision">
+			<div class="wrap">
+				<p>
+					<a href="https://github.com/kbazl3/MultiVision">Check out the project on Github!</a>
+				</p>
+				<br>
+				<p>MultiVision is a project I created to practice implementing secure authorized logins. I eventually want to write small tutorials on specific subjects and publish them on this site so check back in the future for an up to date site.</p>
+
+				<p>Technologies include:</p>
+				<ul>
+					<li>
+						<p>Angular</p>
+					</li>
+					<li>
+
+						<p>HTML5</p>
+					</li>
+					<li>
+						<p>CSS3</p>
+
+						<p>Bootstrap</p>
+					</li>
+					<li>
+						<p>Jade</p>
+					</li>
+					<li>
+						<p>Stylus</p>
+					</li>
+					<li>
+						<p>Heroku</p>
+					</li>
+					<li>
+						<p>MongoDB</p>
+					</li>
+					<li>
+						<p>Node</p>
+
+					</li>
+				</ul>
+
+				<!-- <ul rn-carousel rn-carousel-control="true" class="image">
+					<li>
+					  <img src="./app/images/guitarBazaar.png" alt="" />
+					</li>
+					<li>
+					  <img src="../app/images/mini-01.png" alt="" />
+					</li>
+					<li>
+					  <img src="../app/images/mini-01.png" alt="" />
+					</li>
+				</ul> -->
+
+			</div>
+		</section>
 
 		<h2>Developers Around the World</h2>
 		<div class="image-wrap">
@@ -19,7 +82,7 @@
 					<a href="https://github.com/kbazl3/devs-around-the-world">Check out the project on Github!</a>
 				</p>
 				<br>
-				<p>Devs Around the World is a site that allows users to pinpoint their location on the map while providing some informaiton about themselves like favortie programming language, age, etc...</p>
+				<p>Devs Around the World is a site that allows users to pinpoint their location on the map while providing some informaiton about themselves like favortie programming language, age, etc.... I really enjoy working with the Google Maps API.</p>
 				<p>Technologies include:</p>
 				<ul>
 					<li>
@@ -57,7 +120,7 @@
 		<hr />
 
 
-	    <h2>Guitar Bazaar - Guitar Shop</h2>
+	    <!-- <h2>Guitar Bazaar - Guitar Shop</h2>
 		<div class="image-wrap">
 			<a href="http://guitarbazaar.trade/#/" target=_blank>
 				<img src="./app/images/guitarBazaar.png" alt="TEMP">
@@ -94,24 +157,12 @@
 					<li>
 						<p>Gulp</p>
 					</li>
-				</ul> -->
-
-				<!-- <ul rn-carousel rn-carousel-control="true" class="image">
-					<li>
-					  <img src="./app/images/guitarBazaar.png" alt="" />
-					</li>
-					<li>
-					  <img src="../app/images/mini-01.png" alt="" />
-					</li>
-					<li>
-					  <img src="../app/images/mini-01.png" alt="" />
-					</li>
-				</ul> -->
+				</ul>
 
 			</div>
 		</section>
 
-		<hr /> -->
+		<hr />
 
 		<h2>RainCheck - A Weather App</h2>
 		<div class="image-wrap">
@@ -147,17 +198,6 @@
 					</li>
 				</ul>
 
-				<!-- <ul rn-carousel rn-carousel-control="true" class="image">
-					<li>
-					  <img src="../app/images/mini-01.png" alt="" />
-					</li>
-					<li>
-					  <img src="../app/images/mini-01.png" alt="" />
-					</li>
-					<li>
-					  <img src="../app/images/mini-01.png" alt="" />
-					</li>
-				</ul> -->
 			</div>
 		</section>
 
@@ -193,19 +233,8 @@
 					</li>
 				</ul>
 
-				<!-- <ul rn-carousel rn-carousel-control="true" class="image">
-					<li>
-					  <img src="../app/images/mini-01.png" alt="" />
-					</li>
-					<li>
-					  <img src="../app/images/mini-01.png" alt="" />
-					</li>
-					<li>
-					  <img src="../app/images/mini-01.png" alt="" />
-					</li>
-				</ul> -->
 			</div>
-		</section>
+		</section> -->
 
 		<h2>Pomodoro - Time Management Tool</h2>
 		<div class="image-wrap">
@@ -289,69 +318,6 @@
 		</section>
 
 
-		<h2>MultiVision - Web Dev Tutorials</h2>
-		<div class="image-wrap">
-			<a href="https://cherry-shortcake-76687.herokuapp.com/" target=_blank>
-				<img src="./app/images/multiVision.png" alt="TEMP">
-			</a>
-			<p class="show-section" ng-click="app.multiVision=!app.multiVision"><span class="link"><span ng-if="!app.multiVision"><span class="icon-wrap-show"></span>Show</span><span ng-if="app.multiVision"><span class="icon-wrap-close"></span>Hide</span> details</span>
-			</p>
-		</div>
-
-		<section ng-if="app.multiVision">
-			<div class="wrap">
-				<p>
-					<a href="https://github.com/kbazl3/MultiVision">Check out the project on Github!</a>
-				</p>
-				<br>
-				<p>MultiVision is a project I created while following along with the tutorial at <a href="https://app.pluralsight.com/library/courses/building-angularjs-nodejs-apps-mean/table-of-contents"> this tutorial at Pluralsight.</a>  It went over a lot different techniques such as html templating with Jade or using stylus for your css.  It was fun using Heroku to host as well.  I eventually want to write small tutorials on specific subjects and publish them on this site so check back in the future for an up to date site.</p>
-
-				<p>Technologies include:</p>
-				<ul>
-					<li>
-						<p>Angular</p>
-					</li>
-					<li>
-
-						<p>HTML5</p>
-					</li>
-					<li>
-						<p>CSS3</p>
-
-						<p>Bootstrap</p>
-					</li>
-					<li>
-						<p>Jade</p>
-					</li>
-					<li>
-						<p>Stylus</p>
-					</li>
-					<li>
-						<p>Heroku</p>
-					</li>
-					<li>
-						<p>MongoDB</p>
-					</li>
-					<li>
-						<p>Node</p>
-
-					</li>
-				</ul>
-
-				<!-- <ul rn-carousel rn-carousel-control="true" class="image">
-					<li>
-					  <img src="./app/images/guitarBazaar.png" alt="" />
-					</li>
-					<li>
-					  <img src="../app/images/mini-01.png" alt="" />
-					</li>
-					<li>
-					  <img src="../app/images/mini-01.png" alt="" />
-					</li>
-				</ul> -->
-
-			</div>
-		</section>
 
 		<h2>Drum Kit</h2>
 		<div class="image-wrap">
@@ -394,7 +360,7 @@
 				</ul> -->
 			</div>
 		</section>
-
+<!-- 
 		<h2>CSS Clock</h2>
 		<div class="image-wrap">
 			<a href="https://kbazl3.github.io/CSS-Clock/" target=_blank>
@@ -422,20 +388,8 @@
 						<p>Javascript ES6</p>
 					</li>
 				</ul>
-
-				<!-- <ul rn-carousel rn-carousel-control="true" class="image">
-					<li>
-					  <img src="../app/images/mini-01.png" alt="" />
-					</li>
-					<li>
-					  <img src="../app/images/mini-01.png" alt="" />
-					</li>
-					<li>
-					  <img src="../app/images/mini-01.png" alt="" />
-					</li>
-				</ul> -->
 			</div>
-		</section>
+		</section> -->
 
 
 
