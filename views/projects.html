@@ -3,6 +3,21 @@
 	<article class="panel">
 		<h1><b>Projects</b></h1>
 
+		<h2>Justin Richardson Photography</h2>
+		<div class="image-wrap">
+			<a href="https://justinrichardsonphotography.com/portfolio/" target=_blank>
+				<img src="./app/images/justin_richardson_photo.png" alt="TEMP">
+			</a>
+			<p class="show-section" ng-click="app.clock=!app.clock"><span class="link"><span ng-if="!app.clock"><span class="icon-wrap-show"></span>Show</span><span ng-if="app.clock"><span class="icon-wrap-close"></span>Hide</span> details</span>
+			</p>
+		</div>
+
+		<section ng-if="app.clock">
+			<div class="wrap">
+				<p>A portfolio site for a client to showcase his photography. Built on the Wix platform.</p>
+			</div>
+		</section>
+
 		<h2>MultiVision - Web Dev Tutorials</h2>
 		<div class="image-wrap">
 			<a href="https://cherry-shortcake-76687.herokuapp.com/" target=_blank>
@@ -346,21 +361,6 @@
 					  <img src="../app/images/mini-01.png" alt="" />
 					</li>
 				</ul> -->
-			</div>
-		</section>
-
-		<h2>Justin Richardson Photography</h2>
-		<div class="image-wrap">
-			<a href="https://justinrichardsonphotography.com/portfolio/" target=_blank>
-				<img src="./app/images/justin_richardson_photo.png" alt="TEMP">
-			</a>
-			<p class="show-section" ng-click="app.clock=!app.clock"><span class="link"><span ng-if="!app.clock"><span class="icon-wrap-show"></span>Show</span><span ng-if="app.clock"><span class="icon-wrap-close"></span>Hide</span> details</span>
-			</p>
-		</div>
-
-		<section ng-if="app.clock">
-			<div class="wrap">
-				<p>A portfolio site for a client to showcase his photography. Built on the Wix platform.</p>
 			</div>
 		</section>
 
